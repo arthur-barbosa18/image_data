@@ -1,4 +1,4 @@
-# Rails Base
+# Rails Project extract data from image
 
 It's based on Rails 5 and Ruby 2.5.1
 
