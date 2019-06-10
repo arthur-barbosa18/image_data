@@ -1,0 +1,6 @@
+#logs
+log
+*.log
+tmp
+Gemfile.lock
+vendor

@@ -1,0 +1,39 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API zV1",
+    "version": "v1"
+  },
+  "basePath": "/api/v1",
+  "paths": {
+    "/contagem/": {
+      "get": {
+        "summary": "Quantidade de pixel",
+        "tags": [
+          "Imagem"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Contagem de pixel",
+            "schema": {
+              "$ref": "#/definitions/image_data_object"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "image_data_object": {
+      "type": "object",
+      "properties": {
+        "Quantidade": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
