@@ -82,6 +82,21 @@ mv doc/README_TEMPLATE.md README.md
 git commit -am "Update README.md"
 ```
 
+5. Run tests
+
+```bash
+   docker-compose exec app rspec
+
+```
+
+6. Run and update swagger
+
+```bash
+ docker-compose exec app rake rswag:specs:swaggerize
+ endpoint: http://localhost:5000/api-docs/index.html
+
+```
+
 ## Deployment
 
 TODO: deploy scripts
